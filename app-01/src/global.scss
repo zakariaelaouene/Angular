@@ -1,0 +1,48 @@
+:root {
+  --background: #f0f0f0;
+  --foreground: #111;
+  --primary: teal;
+
+  .dark {
+    --background: #111;
+    --foreground: #f0f0f0;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.debug {
+  border: 1px solid red !important;
+}
+.debug > * {
+  border: 1px solid green !important;
+}
+.debug > * > * {
+  border: 1px solid blue !important;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: clamp(1rem, 5vw, 5rem);
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: var(--primary);
+  color: var(--foreground);
+  cursor: pointer;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
